@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f2f6ff;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #4a6cff;
+            padding: 15px 40px;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 22px;
+        }
+
+        /* MAIN LAYOUT */
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            gap: 38px; /* ≈ 1cm */
+        }
+
+        /* LEFT SECTION */
+        .left-wrapper {
+            position: relative;
+            padding-top: 120px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4a6cff;
+            position: absolute;
+            top:-7px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .left-side {
+            margin-top: 15px;
+            background: #ffffff;
+            color: #000000;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .left-side p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* RIGHT SECTION */
+        .right-side {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #4a6cff;
+        }
+
+        .skills ul {
+            list-style: none;
+        }
+
+        .skills li {
+            background: #e8edff;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .contact p {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        /* RESPONSIVE SPLIT */
+        @media (min-width: 768px) {
+            .profile-card {
+                flex-direction: row;
+            }
+
+            .left-wrapper,
+            .right-side {
+                flex: 1;
+            }
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e8edff;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h1>My Profile Website</h1>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="profile-card">
+
+            <!-- PROFILE SIDE -->
+            <div class="left-wrapper">
+                <img src="image.jpg" alt="Profile Picture" class="profile-img">
+                <div class="name">Jhon Harold J. Balad-on</div>
+
+                <div class="left-side">
+                    <p>Student | BSIT-2E</p>
+                    <p>
+                        Passionate about web development, system design, and academic research.
+                        Focused on building responsive and user-friendly websites.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SKILLS SIDE -->
+            <div class="right-side">
+                <div class="section skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>C Programming</li>
+                        <li>Research Writing</li>
+                    </ul>
+                </div>
+
+                <div class="section contact">
+                    <h2>Contact</h2>
+                    <p>Email: baladon.jhonharold@gmail.com</p>
+                    <p>Canubay, Oroquieta City, Misamis Occidental, Philippines</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Jhon Harold J. Balad-on | Personal Website
+    </footer>
+
+</body>
+</html>
